@@ -38,10 +38,8 @@
     }
     /*Seccion-Bombones-DER*/
    .body-der {
-       /*@include der; screen*/
        p {
            text-align: left;
-           /*text-align:right; screen*/
        }
        .index {
             display: flex;
@@ -64,7 +62,7 @@
                         text-decoration: none;
                         color: $text-color;
                         &::after {
-                            @include after
+                            @include after;
                         }
                         &:hover::after {
                             @include btn-index-hover;

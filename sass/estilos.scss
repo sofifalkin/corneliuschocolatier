@@ -15,63 +15,117 @@
     list-style: none;
 }
 
-
 /*Screen*/
 @media screen and (min-width:881px) {
-    .burger {
-        display: none;
+    /*header*/
+    header {
+        .logo {
+            left: 47%;
+        }
     }
-    /*body*/
-    /*seccion-bombones*/
+    /*body index.html*/
+    .container {
+        .body-der {
+            /*direction: rtl;*/
+        }
+    }
+    /*fin body index.html*/
+     /*bombones.html*/
+     .card-group {
+        padding: 150px 30px 50px 30px;
+        .bombones-body {
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .card-body {
+            margin-left: 15px;
+        }
+    }
+    /*bombones.html*/
+    .bombones-body {
+        img {
+            @include img-index;
+            &:hover {
+                @include img-index-hover;
+            } 
+        }
+    }
+    /*fin bombones.html*/
     /*footer*/
-    .container .linea {
-        padding: 0 30px;
+        footer {
+            height: 400px;
+            .footer-navegation-tienda-logo-contacto {
+                padding: 40px 100px 0px 100px;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: end;
+                .footer-navegation-logo {
+                    margin-top: 20px;
+                    align-content: center;
+                    img {
+                    width: 100px;   
+                    }
+                }
+                .footer-navegation-tienda {
+                    margin-top: 0px;
+                    text-align: left;
+                }
+                .footer-navegation-contacto {
+                    text-align: left;
+                    .footer-list {
+                        li {
+                            line-height: 1.5;
+                        }
+                        .footer-connect {
+                            padding-top: 30px;
+                            line-height: 1.5;
+                            display: flex;
+                            .connect-fb {
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+        .footer-copyright {
+            padding: 10px 0;
+            .footer-copyright-list {
+                li {
+                    margin-top: 30px;
+                    list-style: none;
+                    align-items: center;
+                    display: inline-flex;    
+                }
+                .linea {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .copyright {
+                    margin-top: 10px;
+                }
+            }
+        }
+        .container .linea {
+            padding: 0 30px;
+        }    
     }
-}
+
 /*Tablet*/
-@media screen and (min-width:500px) and (max-width:880px) {
+@media screen and (min-width:499px) and (max-width:880px) {
     /*header*/
     .logo {
-        left: 55%;
-        transform: translateX(-50%);
-        position: absolute;
-        z-index: 1;
+        left: 45%;
     }
-    .logo a img {
-        width: 80px;
-        height: auto;
+    /*body index.html*/
+    .container {
+        .body-der {
+            direction: rtl;
+        }
     }
-    /*burger menu*/
-    .paginas ul {
-        position: absolute;
-        left: 0px;
-        top: 0;
-        background-color: #1D2025;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        padding: 100px;
-        transform: translateX(100%);
-        transition: 0.5s ease-in;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .paginas li {
-        opacity: 0;
-    }
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-    .paginas-active {
-        transform: translateX(0%);
-    }
-    /*finheader*/
-    /*body*/
-    /*sobre-nosotros*/
     .nosotros{
         display: flex;
         flex-direction: column;
@@ -88,68 +142,102 @@
         margin-right: auto;
         width: auto;
     }
+    /*fin body index.html*/
+    /*bombones.html*/
+    .card-group {
+        padding: 150px 30px 50px 30px;
+        .bombones-body {
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .card-body {
+            margin-left: 15px;
+        }
+    }
     /*footer*/
-    /*.footer-navegation-tienda {
-        margin-left: 30px;
+    footer {
+        height: 400px;
+        .footer-navegation-tienda-logo-contacto {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: end;
+            .footer-navegation-logo {
+                margin-top: 20px;
+                align-content: center;
+                img {
+                width: 100px;   
+                }
+            }
+            .footer-navegation-tienda {
+                margin-top: 0px;
+                text-align: left;
+            }
+            .footer-navegation-contacto {
+                text-align: left;
+                .footer-list {
+                    li {
+                        line-height: 1.5;
+                    }
+                    .footer-connect {
+                        padding-top: 30px;
+                        line-height: 1.5;
+                        display: flex;
+                        .connect-fb {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }    
     }
-    .footer-navegation-contacto {
-        margin-right: 30px;
+    .footer-copyright {
+        padding: 10px 0;
+        .footer-copyright-list {
+            li {
+                margin-top: 30px;
+                list-style: none;
+                align-items: center;
+                display: inline-flex;    
+            }
+            .linea {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .copyright {
+                margin-top: 10px;
+            }
+        }
     }
-    .container .linea {
-        padding: 0 30px;
-    }*/
 }
 /*Mobile*/
-/*@media screen and (max-width:500px) {
+@media screen and (max-width:499px) {
     /*header*/
-    /*.logo {
-        left: 58%;
-        transform: translateX(-50%);
-        position: absolute;
-        z-index: 1;
+    .logo {
+        left: 41%; 
     }
-    .logo a img {
-        width: 80px;
-        height: auto;
-    }
-    .paginas ul {
-        position: absolute;
-        left: 0px;
-        top: 0;
-        background-color: #1D2025;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        padding: 100px;
-        transform: translateX(-100%);
-        transition: 0.5s ease-in;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .paginas li {
-        opacity: 0;
-    }
-    .burger {
-        display: block;
-        cursor: pointer;
-        margin-top: 7px;
+    /*bombones.html*/
+    /*.bombones-body {
+        img {
+            width: 300px;
+            height: 450px;
+        }
     }*/
-    /*finheader*/
-    /*body*/
-    /*sobre-nosotros*/
-    /*.img-nosotros img{
-        padding-top: 30px;
-        /* padding-bottom: 30px; 
-        width: 92vw;
-        height: auto;
+    /*fin bombones.html*/
+    /*footer*/
+    .footer-navegation-logo {
+        display: none;
     }
-    .img-bombones img {
-        padding-top: 30px;
-        width: 86vw;
-        height: auto; 
-    }*/
-  
+    .container {
+        ul {
+            display: flex;
+            flex-direction: column;
+            .linea {
+                display: none;
+            }
+        }
+    }
 
+}

@@ -13,9 +13,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .footer-navegation-logo {
-            display: none;
-        }
         .footer-navegation-tienda {
             margin-left: 0px;
             margin-top: 10px;
@@ -48,15 +45,6 @@ footer {
             list-style: none;
             align-items: center;
             flex-direction: column;    
-        }
-    }
-    .container {
-        ul {
-            display: flex;
-            flex-direction: column;
-            .linea {
-                display: none;
-            }
         }
     } 
     .footer-ayuda {
