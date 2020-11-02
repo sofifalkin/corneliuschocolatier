@@ -4,6 +4,8 @@
 @import 'header';
 @import 'footer';
 @import 'index';
+@import 'bombones';
+@import 'contacto';
 
 * {
     padding: 0;
@@ -13,52 +15,6 @@
     list-style: none;
 }
 
-/*Contacto.html*/
-.body-contacto {
-    padding: 150px 30px 50px 30px;
-    background-color: $background-color-body;
-    .form-check {
-        padding-left: 0px;
-        label {
-            margin-left: 30px;
-            color: $text-color;
-            font-weight: 400;
-            letter-spacing: 1px;
-        }
-    }
-    .btn-contacto {
-        @include btn-boot;
-    }
-}
-/*FinContacto.html*/
-
-/*Bombones.html*/
-.card-group {
-    padding: 150px 30px 50px 30px;
-    background-color: $background-color-body;
-    .bombones-body {
-        background-color: $background-color-body;
-        @include card;
-        img {
-            width: 300px;
-            height: 450px;
-           /* @include img-index;
-            &:hover {
-                @include img-index-hover;
-            }*/
-        }
-        .btn-card {
-            @include btn-boot;
-        }
-        h4 {
-            margin-bottom: 20px;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-    }
-}
-/*FinBombones.html*/
 
 /*Screen*/
 @media screen and (min-width:881px) {
@@ -194,47 +150,6 @@
         padding-top: 30px;
         width: 86vw;
         height: auto; 
-    }
-    /*footer*/
-    footer {
-        background-color: #1D2025;
-        color: white;
-        height: 600px;
-        position: relative;
-    }
-    .footer-navegation-logo {
-        display: none;
-    }
-    .footer-navegation-tienda-logo-contacto {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-navegation-tienda {
-        margin-left: 0px;
-        margin-top: 10px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-    .footer-navegation-contacto {
-        margin-right: 0px;
-        text-align: center;
-    }
-    .container ul {
-        display: flex;
-        flex-direction: column;
-    }
-    .footer-copyright {
-        margin-bottom: 20px;
-    }
-    .footer-copyright-list li {
-        margin-top: 30px;
-        list-style: none;
-        align-items: center;
-        flex-direction: column;
-    }
-    .container .linea {
-        display: none;
-    }   
+    }*/
+  
 

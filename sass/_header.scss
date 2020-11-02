@@ -35,6 +35,21 @@ header {
             }
         }
     } 
+    .carrito {
+        margin-right: 30px;
+        margin-top: 32px;
+        right: 0px;
+        position: fixed;
+        img {
+            height: 30px;
+            width: auto;  
+            @include iconos;
+            
+            &:hover {
+                @include iconos-hover;
+            }
+        }
+    }
     .container-paginas {
         .navbar-paginas {
             width: 100%;

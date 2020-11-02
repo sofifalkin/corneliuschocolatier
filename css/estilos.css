@@ -56,6 +56,32 @@ header {
   -o-transform: scale(1.05) translate(2px);
   -ms-transform: scale(1.05) translate(2px);
 }
+.container-total .carrito {
+  margin-right: 30px;
+  margin-top: 32px;
+  right: 0px;
+  position: fixed;
+}
+.container-total .carrito img {
+  height: 30px;
+  width: auto;
+  transition: All 1.2s ease;
+  -webkit-transition: All 1.2s ease;
+  -moz-transition: All 1.2s ease;
+  -o-transition: All 1.2s ease;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+.container-total .carrito img:hover {
+  transform: scale(1.05) translate(2px);
+  -webkit-transform: scale(1.05) translate(2px);
+  -moz-transform: scale(1.05) translate(2px);
+  -o-transform: scale(1.05) translate(2px);
+  -ms-transform: scale(1.05) translate(2px);
+}
 .container-total .container-paginas .navbar-paginas {
   width: 100%;
   height: 100%;
@@ -242,29 +268,32 @@ header {
 /*bombones*/
 /*fin-bombones*/
 /*Footer*/
-.footer {
+footer {
   background-color: #1D2025;
   color: white;
-  height: 580px;
+  height: 600px;
   position: relative;
 }
-.footer .footer-navegation-tienda-logo-contacto {
+footer .footer-navegation-tienda-logo-contacto {
   height: 100%;
-  padding: 30px;
+  padding: 40px 30px 0px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.footer .footer-navegation-tienda-logo-contacto .footer-navegation-logo {
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-logo {
   display: none;
 }
-.footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda {
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda {
   margin-left: 0px;
   margin-top: 10px;
   margin-bottom: 40px;
   text-align: center;
 }
-.footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto {
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda li a {
+  color: white;
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto {
   margin-right: 0px;
   text-align: center;
 }
@@ -280,7 +309,7 @@ header {
   text-align: center;
 }
 .footer-copyright .footer-copyright-list li {
-  margin-top: 30px;
+  margin-top: 20px;
   list-style: none;
   align-items: center;
   flex-direction: column;
@@ -294,7 +323,6 @@ header {
 }
 .footer-copyright .footer-ayuda {
   margin-top: 20px;
-  padding-bottom: 30px;
 }
 .footer-copyright .footer-ayuda ul {
   display: inline-flex;
@@ -399,7 +427,6 @@ header {
 .body .body-izq .index .img-izq img {
   padding-top: 30px;
   padding-bottom: 30px;
-  height: 80vh;
   width: 100%;
   transition: All 1.4s ease;
   -webkit-transition: All 1.4s ease;
@@ -439,7 +466,7 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #840032;
   transition: width 0.3s;
 }
 .body .body-izq .index .texto-index .btn a:hover::after {
@@ -447,11 +474,11 @@ header {
   transition: width 0.3s;
 }
 .body .body-der {
-  direction: rtl;
-  text-align: right;
+  /*@include der; screen*/
 }
 .body .body-der p {
-  text-align: right;
+  text-align: left;
+  /*text-align:right; screen*/
 }
 .body .body-der .index {
   display: flex;
@@ -460,7 +487,6 @@ header {
 .body .body-der .index .img-der img {
   padding-top: 30px;
   padding-bottom: 30px;
-  height: 80vh;
   width: 100%;
   transition: All 1.4s ease;
   -webkit-transition: All 1.4s ease;
@@ -500,7 +526,7 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #840032;
   transition: width 0.3s;
 }
 .body .body-der .index .texto-index .btn a:hover::after {
@@ -509,40 +535,12 @@ header {
 }
 
 /*FinIndex.html*/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
-/*Contacto.html*/
-.body-contacto {
-  padding: 150px 30px 50px 30px;
-  background-color: #1D2025;
-}
-.body-contacto .form-check {
-  padding-left: 0px;
-}
-.body-contacto .form-check label {
-  margin-left: 30px;
-  color: white;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-.body-contacto .btn-contacto {
-  width: auto;
-  letter-spacing: 2px;
-  background: transparent;
-  border-color: #840032 !important;
-  padding-left: 12px !important;
-}
-.body-contacto .btn-contacto:hover, .body-contacto .btn-contacto:active, .body-contacto .btn-contacto:visited {
-  background-color: #840032;
-}
-
-/*FinContacto.html*/
+/*btns-index*/
+/*fin-btns-index*/
+/*body-index*/
+/*fin-body-index*/
+/*bombones*/
+/*fin-bombones*/
 /*Bombones.html*/
 .card-group {
   padding: 150px 30px 50px 30px;
@@ -554,7 +552,8 @@ header {
   text-align: center;
   align-items: center;
   color: white;
-  padding: 20px 0 0 10px;
+  /*padding: 20px 0 0 10px;*/
+  text-align: left;
 }
 .card-group .bombones-body img {
   width: 300px;
@@ -564,24 +563,64 @@ header {
        @include img-index-hover;
    }*/
 }
-.card-group .bombones-body .btn-card {
+.card-group .bombones-body .card-body {
+  padding-left: 0px;
+}
+.card-group .bombones-body .card-body .btn-card {
   width: auto;
   letter-spacing: 2px;
   background: transparent;
-  border-color: #840032 !important;
-  padding-left: 12px !important;
+  border-color: #840032;
+  padding-left: 12px;
 }
-.card-group .bombones-body .btn-card:hover, .card-group .bombones-body .btn-card:active, .card-group .bombones-body .btn-card:visited {
+.card-group .bombones-body .card-body .btn-card:hover, .card-group .bombones-body .card-body .btn-card:active, .card-group .bombones-body .card-body .btn-card:visited {
   background-color: #840032;
 }
-.card-group .bombones-body h4 {
+.card-group .bombones-body .card-body h4 {
   margin-bottom: 20px;
 }
-.card-group .bombones-body p {
+.card-group .bombones-body .card-body p {
   margin-bottom: 20px;
 }
 
 /*FinBombones.html*/
+/*btns-index*/
+/*fin-btns-index*/
+/*body-index*/
+/*fin-body-index*/
+/*bombones*/
+/*fin-bombones*/
+/*Contacto.html*/
+.body-contacto {
+  padding: 150px 30px 50px 30px;
+  background-color: #1D2025;
+}
+.body-contacto .form-check label {
+  margin-left: 20px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.body-contacto .btn-contacto {
+  width: auto;
+  letter-spacing: 2px;
+  background: transparent;
+  border-color: #840032;
+  padding-left: 12px;
+}
+.body-contacto .btn-contacto:hover, .body-contacto .btn-contacto:active, .body-contacto .btn-contacto:visited {
+  background-color: #840032;
+}
+
+/*FinContacto.html*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 /*Screen*/
 @media screen and (min-width: 881px) {
   .burger {
@@ -727,56 +766,6 @@ body {
     padding-top: 30px;
     width: 86vw;
     height: auto; 
-}
-/*footer*/
-footer {
-  background-color: #1D2025;
-  color: white;
-  height: 600px;
-  position: relative;
-}
-
-.footer-navegation-logo {
-  display: none;
-}
-
-.footer-navegation-tienda-logo-contacto {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-navegation-tienda {
-  margin-left: 0px;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.footer-navegation-contacto {
-  margin-right: 0px;
-  text-align: center;
-}
-
-.container ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-copyright {
-  margin-bottom: 20px;
-}
-
-.footer-copyright-list li {
-  margin-top: 30px;
-  list-style: none;
-  align-items: center;
-  flex-direction: column;
-}
-
-.container .linea {
-  display: none;
-}
+}*/
 
 /*# sourceMappingURL=estilos.css.map */

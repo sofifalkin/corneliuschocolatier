@@ -2,14 +2,14 @@
 @import 'colors';
 
 /*Footer*/
-.footer {
+footer {
     background-color: $background-color-body;
     color: $text-color;
-    height: 580px;
+    height: 600px;
     position: relative; 
     .footer-navegation-tienda-logo-contacto {
         height: 100%;
-        padding: 30px;
+        padding: 40px 30px 0px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,6 +21,11 @@
             margin-top: 10px;
             margin-bottom: 40px;
             text-align: center;
+            li {
+                a {
+                    color: $text-color;
+                }
+            }
         }
         .footer-navegation-contacto {
             margin-right: 0px;
@@ -39,7 +44,7 @@
     text-align: center;
     .footer-copyright-list {
         li {
-            margin-top: 30px;
+            margin-top: 20px;
             list-style: none;
             align-items: center;
             flex-direction: column;    
@@ -56,7 +61,6 @@
     } 
     .footer-ayuda {
         margin-top: 20px;
-        padding-bottom: 30px;
         ul {
             display: inline-flex;
             .footer-ayuda-list-item {

@@ -24,7 +24,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: $hovercolor;
     transition: width .3s;
 }
 @mixin hover {
@@ -35,8 +35,8 @@
     width: auto;
     letter-spacing: 2px;
     background: transparent;
-    border-color:  $hovercolor !important;
-    padding-left: 12px !important;
+    border-color:  $hovercolor;
+    padding-left: 12px;
     &:hover, &:active, &:visited {
         background-color: $hovercolor;
     }
@@ -79,7 +79,6 @@
 @mixin img-index-carac {
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 80vh;
     width: 100%;
 }
 
@@ -122,8 +121,7 @@
     transition: width .3s; 
 }
 
-@mixin der {
-    direction: rtl;
+@mixin der-screen {
     text-align: right;
 }
 /*fin-body-index*/
@@ -133,6 +131,6 @@
     text-align: center;
     align-items: center;
     color: white;
-    padding: 20px 0 0 10px;
+    /*padding: 20px 0 0 10px;*/
 }
 /*fin-bombones*/

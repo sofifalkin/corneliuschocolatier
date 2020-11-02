@@ -1,0 +1,19 @@
+@import 'mixins';
+@import 'colors';
+/*Contacto.html*/
+.body-contacto {
+    padding: 150px 30px 50px 30px;
+    background-color: $background-color-body;
+    .form-check {
+        label {
+            margin-left: 20px;
+            color: $text-color;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+    }
+    .btn-contacto {
+        @include btn-boot;
+    }
+}
+/*FinContacto.html*/
