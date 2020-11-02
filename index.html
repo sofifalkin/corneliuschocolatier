@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Cornelius Chocolatier</title>
+    <meta name="description" content="Cornelius Chocolatier, una pasión por el chocolate artesanal. Todos nuestros chocolates son elaborados a mano en Buenos Aires, Argentina.">
+    <meta name="keywords" content="Chocolatieria Buenos Aires, Chocolate, Bombones, Trufas, Chocolateria Artesanal">
+    <title>Cornelius Chocolatier | Chocolates y Bombones Artesanales | Buenos Aires, Argentina</title>
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -15,38 +17,48 @@
 <body>
     <!--Header-->
     <header class="header">
-        <div class="header-container">
+        <div class="container-total">
             <div class="logo">
                 <a href="index.html">
                     <img src="imgfinal/Logo-Cornelius.svg" alt="Logo Cornelius Chocolatier">
                 </a>
             </div>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <div>
-            <i class="fas fa-arrow-up"></i>
-            </div>
-            <nav class="paginas-carrito">
-                <nav class="paginas">
-                    <ul>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="bombones.html">Bombones</a></li>
-                        <li><a href="cajas.html">Cajas</a></li>
-                        <li><a href="tabletas.html">Tabletas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+            <!--<div class="carrito">
+                <a href="#">
+                    <img src="imgfinal/carrito-icono.svg" alt="Carrito de la Tienda Online">
+                </a>
+            </div>-->
+            <div class="container-paginas">
+                <nav class="navbar-paginas">
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bombones.html" class="nav-link">Bombones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cajas.html" class="nav-link">Cajas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tabletas.html" class="nav-link">Tabletas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
                     </ul>
                 </nav>
-                <div class="carrito">
-                    <a href="#">
-                        <img src="imgfinal/carrito-icono.svg" alt="Carrito">
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </div>      
+    </header> 
     <!--Fin Header-->
     <!--Hero-->
     <div class="hero">
@@ -58,14 +70,13 @@
         </div>
     </div>
     <!--Fin Hero-->
-
     <!--Body-->
     <div class="body">
         <!--Seccion Sobre Nosotros-->
        <div class="container body-izq">
            <div class="row body-izq index">
                <div class="col-md-7 col-sm-12 col-xs-12 body-izq img-izq">
-                  <img src="imgfinal/img-nosotros.jpg" alt="Nosotros">
+                  <img src="imgfinal/img-nosotros.jpg" alt="Sección Sobre Nosotros, una breve historia. Una mujer espolvoreando chocolate">
                </div>
                <div class="col-md-5 col-sm-8 col-xs-12 body-izq texto-index">
                    <h3>Sobre Nosotros</h3>
@@ -83,7 +94,7 @@
         <div class="container body-der">
             <div class="row body-der index">
                 <div class="col-md-7 col-sm-12 col-xs-12 body-der img-der">
-                    <img src="imgfinal/img-bombones.jpg" alt="Bombones">
+                    <img src="imgfinal/img-bombones.jpg" alt="Sección Bombones y Trufas. Trufas de ganache recubiertas con cacao y azucar, sobre un plato gris.">
                 </div>
                 <div class="col-md-5 col-sm-8 col-xs-12 body-der texto-index">
                     <h3>Sobre Nosotros</h3>
@@ -101,7 +112,7 @@
         <div class="container body-izq">
            <div class="row body-izq index">
                <div class="col-md-7 col-sm-12 col-xs-12 body-izq img-izq">
-                  <img src="imgfinal/img-combos.jpg" alt="Combos">
+                  <img src="imgfinal/img-combos.jpg" alt="Sección Combos. Vista de una caja con bombones rellenos de forma cuadrada.">
                </div>
                <div class="col-md-5 col-sm-8 col-xs-12 body-izq texto-index">
                    <h3>Nuestros Combos</h3>
@@ -119,7 +130,7 @@
         <div class="container body-der">
             <div class="row body-der index">
                 <div class="col-md-7 col-sm-12 col-xs-12 body-der img-der">
-                    <img src="imgfinal/img-tabletas.jpg" alt="Tabletas">
+                    <img src="imgfinal/img-tabletas.jpg" alt="Sección Tabletas. Tableta de chocolate amargo intenso de 175grs espolvoreada con cacao.">
                 </div>
                 <div class="col-md-5 col-sm-8 col-xs-12 body-der texto-index">
                     <h3>Nuestras Tabletas</h3>
@@ -128,15 +139,14 @@
                         dicta corrupti porro ipsum totam accusamus, enim atque alias libero, explicabo eligendi incidunt eius hic.
                     </p>
                     <div class="body-der btn">
-                        <p><a href="bombones.html">Ver más</a></p>
+                        <p><a href="tabletas.html">Ver más</a></p>
                     </div>
                 </div>
             </div>
         </div>
    </div>    
    <!--Fin Body-->
-
-    <!--Footer -->
+    <!--Footer-->
     <footer>
         <div class="footer-total-row">
                 <div class="footer-navegation-tienda-logo-contacto">

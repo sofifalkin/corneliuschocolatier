@@ -1,0 +1,194 @@
+@import 'mixins';
+@import 'colors';
+
+/*Header*/
+header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+.otras-paginas {
+    background-color: $background-color-body;
+}
+.container-total {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 1;
+    .logo {
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        left: 40%;  
+        a {
+            img {
+                width: 80px;
+                height: auto;
+                @include iconos;
+                
+                &:hover {
+                @include iconos-hover;
+                }
+            }
+        }
+    } 
+    .container-paginas {
+        .navbar-paginas {
+            width: 100%;
+            height: 100%;
+            background-color: $background-color-body;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+            z-index: 100;
+            .hamburger-menu {
+                width: 30px;
+                margin: 4px;
+                height: 28px;
+                position: fixed;
+                top: 30px;
+                left: 30px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .line {
+                    width: 100%;
+                    height: 2px;
+                    background-color: white;
+                    transition: all 0.8s;
+                }
+            }
+            .nav-list {
+                text-align: left;
+                .nav-item {
+                    list-style: none;
+                    margin: 25px;
+                    text-align: center;
+                    .nav-link {
+                        text-decoration: none;
+                        font-size: 22px;
+                        color: #eeeeee;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        position: relative;
+
+                        &::before {
+                            @include nav;
+                            top: 0;
+                            transform-origin: left;
+                        }
+                        &::after {
+                            @include nav;
+                            bottom: 0;
+                            transform-origin: right;
+                        }
+                        &:hover::before, &:hover::after {
+                            @include nav-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.change {
+    left: 0 !important;
+    .line-1 {
+        transform: rotateZ(-405deg) translate(-8px, 6px);
+    }
+    .line-2 {
+        opacity: 0;
+    }
+    .line-3 {
+        transform: rotateZ(405deg) translate(-8px, -6px);
+    }
+}
+/*.hamburger-menu {
+        height: 100%;
+        padding-top: 30px;
+        padding-left: 30px;
+        div {
+            width: 28px;
+            height: 2px;
+            background-color: white;
+            margin: 6px;  
+        }
+    }
+    .paginas-carrito {
+        width: 100%;
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
+        .paginas {
+            width: 80%;
+            ul {
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                font-size: 14px;
+                margin-bottom: 0px;
+                letter-spacing: 2px;
+                font-family: $font;
+                font-weight: 100;
+                text-transform: uppercase; 
+                li {
+                    list-style: none;
+        
+                    &::after {
+                        @include after;
+                    }
+                    &:hover::after {
+                        @include hover;
+                    }
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .carrito {
+            margin-left: 30px;
+            img {
+                height: 30px;
+                width: auto;  
+                @include iconos;
+                
+                &:hover {
+                    @include iconos-hover;
+                }
+            }
+        }
+    } 
+}*/   
+.hero {
+    @include hero;
+    .hero-container {
+        color: $text-color;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        margin-top: 30px;
+        .titulo {
+            font-size: 14px;
+            font-weight: 100;
+            margin-bottom: 10px;
+            h2 {
+                font-size: 16px;
+                font-weight: 200;
+                letter-spacing: 5px;
+                padding-bottom: 10px; 
+            }
+        }
+    }
+}
