@@ -1,0 +1,317 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+@import './header-footer';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Body*/
+/*Index.html*/
+.body {
+    background-color: $background-color-body;
+    /*SobreNosotros-IZQ*/
+    .body-izq {
+        .index {
+            display: flex;
+            justify-content: space-between;
+            .img-izq {
+                img {
+                    @include img-index-carac;
+                    @include img-index;
+                    
+                    &:hover {
+                        @include img-index-hover;
+                    }
+                }
+            }
+            .texto-index {
+                @include texto-index;
+                .btn {
+                    @include btn-index;
+                    a {
+                        text-decoration: none;
+                        color: $text-color;
+                        &::after {
+                            @include after
+                        }
+                        &:hover::after {
+                            @include btn-index-hover;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    /*Seccion-Bombones-DER*/
+   .body-der {
+       @include der;
+       p {
+           text-align: right;
+       }
+       .index {
+            display: flex;
+            justify-content: space-between;
+            .img-der {
+                img {
+                    @include img-index-carac;
+                    @include img-index;
+                        
+                    &:hover {
+                        @include img-index-hover;
+                    }
+                }
+            }
+            .texto-index {
+                @include texto-index;
+                .btn {
+                    @include btn-index;
+                    a {
+                        text-decoration: none;
+                        color: $text-color;
+                        &::after {
+                            @include after
+                        }
+                        &:hover::after {
+                            @include btn-index-hover;
+                        }
+
+                    }
+                }
+            }
+        }
+    } 
+}
+/*FinIndex.html*/
+
+/*Contacto.html*/
+.body-contacto {
+    padding: 150px 30px 50px 30px;
+    background-color: $background-color-body;
+    .form-check {
+        padding-left: 0px;
+        label {
+            margin-left: 30px;
+            color: $text-color;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+    }
+    .btn-contacto {
+        @include btn-boot;
+    }
+}
+/*FinContacto.html*/
+
+/*Bombones.html*/
+.card-group {
+    padding: 150px 30px 50px 30px;
+    background-color: $background-color-body;
+    .bombones-body {
+        background-color: $background-color-body;
+        @include card;
+        img {
+            width: 300px;
+            height: 450px;
+           /* @include img-index;
+            &:hover {
+                @include img-index-hover;
+            }*/
+        }
+        .btn-card {
+            @include btn-boot;
+        }
+        h4 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+/*FinBombones.html*/
+
+/*Screen*/
+@media screen and (min-width:881px) {
+    .burger {
+        display: none;
+    }
+    /*body*/
+    /*seccion-bombones*/
+    /*footer*/
+    .container .linea {
+        padding: 0 30px;
+    }
+}
+/*Tablet*/
+@media screen and (min-width:500px) and (max-width:880px) {
+    /*header*/
+    .logo {
+        left: 55%;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 1;
+    }
+    .logo a img {
+        width: 80px;
+        height: auto;
+    }
+    /*burger menu*/
+    .paginas ul {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        background-color: #1D2025;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .paginas li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .paginas-active {
+        transform: translateX(0%);
+    }
+    /*finheader*/
+    /*body*/
+    /*sobre-nosotros*/
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-nosotros img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    .img-bombones img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    /*footer*/
+    .footer-navegation-tienda {
+        margin-left: 30px;
+    }
+    .footer-navegation-contacto {
+        margin-right: 30px;
+    }
+    .container .linea {
+        padding: 0 30px;
+    }
+}
+/*Mobile*/
+@media screen and (max-width:500px) {
+    /*header*/
+    .logo {
+        left: 58%;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 1;
+    }
+    .logo a img {
+        width: 80px;
+        height: auto;
+    }
+    .paginas ul {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        background-color: #1D2025;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .paginas li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-top: 7px;
+    }
+    /*finheader*/
+    /*body*/
+    /*sobre-nosotros*/
+    .img-nosotros img{
+        padding-top: 30px;
+        /* padding-bottom: 30px; */
+        width: 92vw;
+        height: auto;
+    }
+    .img-bombones img {
+        padding-top: 30px;
+        width: 86vw;
+        height: auto; 
+    }
+    /*footer*/
+    footer {
+        background-color: #1D2025;
+        color: white;
+        height: 600px;
+        position: relative;
+    }
+    .footer-navegation-logo {
+        display: none;
+    }
+    .footer-navegation-tienda-logo-contacto {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-navegation-tienda {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-navegation-contacto {
+        margin-right: 0px;
+        text-align: center;
+    }
+    .container ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-copyright {
+        margin-bottom: 20px;
+    }
+    .footer-copyright-list li {
+        margin-top: 30px;
+        list-style: none;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container .linea {
+        display: none;
+    }
+}
