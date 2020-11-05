@@ -4,8 +4,9 @@
 @import 'header';
 @import 'footer';
 @import 'index';
-@import 'bombones';
+@import 'bom-caja-tab';
 @import 'contacto';
+@import 'nosotros';
 
 * {
     padding: 0;
@@ -13,6 +14,9 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
+body {
+    background-color: $background-color-body;
 }
 
 /*Screen*/
@@ -32,7 +36,7 @@
     /*fin body index.html*/
      /*bombones.html*/
      .card-group {
-        padding: 150px 30px 50px 30px;
+        padding: 150px 0px 0px 0px;
         .bombones-body {
             img {
                 width: 90%;
@@ -145,7 +149,7 @@
     /*fin body index.html*/
     /*bombones.html*/
     .card-group {
-        padding: 150px 30px 50px 30px;
+        padding: 150px 0px 0px 0px;
         .bombones-body {
             img {
                 width: 90%;
