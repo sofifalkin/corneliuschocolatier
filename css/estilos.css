@@ -801,25 +801,23 @@ body {
     left: 41%;
   }
 
-  /*bombones.html*/
-  /*.bombones-body {
-      img {
-          width: 300px;
-          height: 450px;
-      }
-  }*/
-  /*fin bombones.html*/
   /*footer*/
-  .footer-navegation-logo {
+  footer .footer-navegation-logo {
     display: none;
   }
-
-  .container ul {
+  footer .container ul {
     display: flex;
     flex-direction: column;
   }
-  .container ul .linea {
+  footer .container ul .linea {
     display: none;
+  }
+  footer .footer-navegation-tienda {
+    margin-top: 0px;
+    text-align: center;
+  }
+  footer .footer-navegation-tienda ul {
+    text-align: center;
   }
 }
 

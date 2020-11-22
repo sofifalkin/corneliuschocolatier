@@ -211,26 +211,26 @@ body {
     .logo {
         left: 41%; 
     }
-    /*bombones.html*/
-    /*.bombones-body {
-        img {
-            width: 300px;
-            height: 450px;
-        }
-    }*/
-    /*fin bombones.html*/
     /*footer*/
-    .footer-navegation-logo {
-        display: none;
-    }
-    .container {
-        ul {
-            display: flex;
-            flex-direction: column;
-            .linea {
-                display: none;
+    footer { 
+        .footer-navegation-logo {
+            display: none;
+        }
+        .container {
+            ul {
+                display: flex;
+                flex-direction: column;
+                .linea {
+                    display: none;
+                }
+            }
+        }
+        .footer-navegation-tienda {
+            margin-top: 0px;
+            text-align: center;
+            ul {
+                text-align: center;
             }
         }
     }
-
 }
