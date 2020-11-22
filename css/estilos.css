@@ -293,6 +293,32 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto {
   margin-right: 0px;
   text-align: center;
 }
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .logo-connect {
+  display: inline-flex;
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .logo-connect img {
+  height: 40px;
+  width: auto;
+  transition: All 1.2s ease;
+  -webkit-transition: All 1.2s ease;
+  -moz-transition: All 1.2s ease;
+  -o-transition: All 1.2s ease;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .logo-connect img:hover {
+  transform: scale(1.05) translate(2px);
+  -webkit-transform: scale(1.05) translate(2px);
+  -moz-transform: scale(1.05) translate(2px);
+  -o-transform: scale(1.05) translate(2px);
+  -ms-transform: scale(1.05) translate(2px);
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
+  margin-right: 25px;
+}
 
 .footer-copyright {
   margin-bottom: 20px;
@@ -324,79 +350,6 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto {
   color: white;
 }
 
-/*footer {
-    background-color: $background-color-body;
-    color: $text-color;
-    height: 350px;
-    position: relative;
-    .footer-navegation-tienda-logo-contacto {
-        padding: 20px;
-        @include flexbox;
-        justify-content: space-between;
-        .footer-navegation-logo {
-            margin-top: 20px;
-            align-content: center;
-            img {
-              width: 100px;   
-            }
-        }
-        .footer-navegation-tienda {
-            margin-left: 80px;
-        }
-        .footer-navegation-contacto {
-            margin-right: 80px;
-            .footer-list {
-                list-style: none;
-                li {
-                    line-height: 1.5;
-                }
-                .footer-connect {
-                    list-style: none;
-                    padding-top: 30px;
-                    line-height: 1.5;
-                    display: flex;
-                    .connect-fb {
-                        margin-right: 15px;
-                    }
-                }
-            }
-        }
-    }
-    .footer-copyright {
-        background-color: $background-color-body;
-        position: absolute;
-        width: 100%;
-        bottom: 0%;
-        display: block;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 0;
-        .footer-ayuda {
-            margin-top: 20px;
-            ul {
-                display: inline-flex;
-            }
-            .footer-ayuda-list-item {
-                margin-right: 25px;
-                margin-left: 25px;
-             }
-             a {
-                color: $text-color;
-            }
-        }
-        .footer-copyright-list {
-            li {
-                margin-top: 30px;
-                list-style: none;
-                align-items: center;
-                display: inline-flex;    
-            }
-            .copyright {
-                margin-top: 10px;
-            }
-        }
-    }
-}*/
 /*btns-index*/
 /*fin-btns-index*/
 /*body-index*/
@@ -618,11 +571,6 @@ body {
     left: 47%;
   }
 
-  /*body index.html*/
-  .container .body-der {
-    /*direction: rtl;*/
-  }
-
   /*fin body index.html*/
   /*bombones.html*/
   .card-group {
@@ -723,10 +671,6 @@ body {
   }
 
   /*body index.html*/
-  .container .body-der {
-    direction: rtl;
-  }
-
   .nosotros {
     display: flex;
     flex-direction: column;

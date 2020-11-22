@@ -27,6 +27,21 @@ footer {
         .footer-navegation-contacto {
             margin-right: 0px;
             text-align: center;
+            .logo-connect {
+                display: inline-flex;
+                img {
+                    height: 40px;
+                    width: auto;  
+                    @include iconos;
+                    
+                    &:hover {
+                        @include iconos-hover;
+                    }
+                }
+            }
+            .fb {
+                margin-right: 25px;
+            }
         }
     }
 }    
@@ -62,76 +77,3 @@ footer {
     }   
 }
 
-/*footer {
-    background-color: $background-color-body;
-    color: $text-color;
-    height: 350px;
-    position: relative;
-    .footer-navegation-tienda-logo-contacto {
-        padding: 20px;
-        @include flexbox;
-        justify-content: space-between;
-        .footer-navegation-logo {
-            margin-top: 20px;
-            align-content: center;
-            img {
-              width: 100px;   
-            }
-        }
-        .footer-navegation-tienda {
-            margin-left: 80px;
-        }
-        .footer-navegation-contacto {
-            margin-right: 80px;
-            .footer-list {
-                list-style: none;
-                li {
-                    line-height: 1.5;
-                }
-                .footer-connect {
-                    list-style: none;
-                    padding-top: 30px;
-                    line-height: 1.5;
-                    display: flex;
-                    .connect-fb {
-                        margin-right: 15px;
-                    }
-                }
-            }
-        }
-    }
-    .footer-copyright {
-        background-color: $background-color-body;
-        position: absolute;
-        width: 100%;
-        bottom: 0%;
-        display: block;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 0;
-        .footer-ayuda {
-            margin-top: 20px;
-            ul {
-                display: inline-flex;
-            }
-            .footer-ayuda-list-item {
-                margin-right: 25px;
-                margin-left: 25px;
-             }
-             a {
-                color: $text-color;
-            }
-        }
-        .footer-copyright-list {
-            li {
-                margin-top: 30px;
-                list-style: none;
-                align-items: center;
-                display: inline-flex;    
-            }
-            .copyright {
-                margin-top: 10px;
-            }
-        }
-    }
-}*/
