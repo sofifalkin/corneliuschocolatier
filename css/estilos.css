@@ -519,8 +519,19 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
 /*bombones*/
 /*fin-bombones*/
 /*Bombones.html*/
+.info {
+  padding-top: 150px;
+  color: white;
+  text-align: center;
+}
+.info .texto {
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .card-group {
-  padding: 160px 30px 0px 30px;
+  padding: 50px 30px 0px 30px;
   background-color: #1D2025;
 }
 .card-group .bombones-body {
@@ -565,8 +576,19 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
 /*bombones*/
 /*fin-bombones*/
 /*Contacto.html*/
+.info {
+  padding-top: 150px;
+  color: white;
+  text-align: center;
+}
+.info .texto {
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .body-contacto {
-  padding: 150px 30px 50px 30px;
+  padding: 20px 30px 50px 30px;
   background-color: #1D2025;
 }
 .body-contacto .form-check label {
@@ -613,7 +635,7 @@ body {
   /*fin body index.html*/
   /*bombones.html*/
   .card-group {
-    padding: 150px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
   }
   .card-group .bombones-body img {
     width: 90%;
@@ -732,7 +754,7 @@ body {
   /*fin body index.html*/
   /*bombones.html*/
   .card-group {
-    padding: 150px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
   }
   .card-group .bombones-body img {
     width: 90%;

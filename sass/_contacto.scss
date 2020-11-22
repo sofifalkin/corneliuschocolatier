@@ -1,8 +1,14 @@
 @import 'mixins';
 @import 'colors';
 /*Contacto.html*/
+.info {
+    @include info;
+    .texto {
+        @include texto;
+    }
+}
 .body-contacto {
-    padding: 150px 30px 50px 30px;
+    padding: 20px 30px 50px 30px;
     background-color: $background-color-body;
     .form-check {
         label {

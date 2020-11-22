@@ -1,8 +1,21 @@
+@import 'colors';
 
 @mixin flexbox {
     display: flex;
     align-content: center;    
 } 
+
+@mixin info {
+    padding-top: 150px;
+    color: $text-color;
+    text-align: center;
+}
+
+@mixin texto {
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 /*btns-index*/
 @mixin nav {
@@ -19,6 +32,7 @@
 @mixin nav-hover {
     transform: scaleX(1);
 }
+
 @mixin after {
     content: '';
     display: block;
@@ -27,10 +41,12 @@
     background: $hovercolor;
     transition: width .3s;
 }
+
 @mixin hover {
     width: 100%;
     transition: width .3s;
 }
+
 @mixin btn-boot {
     width: auto;
     letter-spacing: 2px;
@@ -121,8 +137,8 @@
     width: 100%;
     transition: width .3s; 
 }
-
 /*fin-body-index*/
+
 /*bombones*/
 @mixin card {
     border-color: transparent;

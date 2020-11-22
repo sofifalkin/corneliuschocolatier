@@ -1,8 +1,14 @@
 @import 'mixins';
 
 /*Bombones.html*/
+.info {
+    @include info;
+    .texto {
+        @include texto;
+    }
+}
 .card-group {
-    padding: 160px 30px 0px 30px;
+    padding: 50px 30px 0px 30px;
     background-color: $background-color-body;
     .bombones-body {
         background-color: $background-color-body;

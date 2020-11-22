@@ -1,0 +1,235 @@
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+@import 'header';
+@import 'footer';
+@import 'index';
+@import 'bom-caja-tab';
+@import 'contacto';
+@import 'nosotros';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: $background-color-body;
+}
+
+/*Screen*/
+@media screen and (min-width:881px) {
+    /*header*/
+    header {
+        .logo {
+            left: 47%;
+        }
+    }
+    /*fin body index.html*/
+     /*bombones.html*/
+     .card-group {
+        padding: 150px 0px 0px 0px;
+        .bombones-body {
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .card-body {
+            margin-left: 15px;
+        }
+    }
+    /*bombones.html*/
+    .bombones-body {
+        img {
+            @include img-index;
+            &:hover {
+                @include img-index-hover;
+            } 
+        }
+    }
+    /*fin bombones.html*/
+    /*footer*/
+        footer {
+            height: 400px;
+            .footer-navegation-tienda-logo-contacto {
+                padding: 40px 100px 0px 100px;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: end;
+                .footer-navegation-logo {
+                    margin-top: 20px;
+                    align-content: center;
+                    img {
+                    width: 100px;   
+                    }
+                }
+                .footer-navegation-tienda {
+                    margin-top: 0px;
+                    text-align: left;
+                }
+                .footer-navegation-contacto {
+                    text-align: left;
+                    .footer-list {
+                        li {
+                            line-height: 1.5;
+                        }
+                        .footer-connect {
+                            padding-top: 30px;
+                            line-height: 1.5;
+                            display: flex;
+                            .connect-fb {
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+        .footer-copyright {
+            padding: 10px 0;
+            .footer-copyright-list {
+                li {
+                    margin-top: 30px;
+                    list-style: none;
+                    align-items: center;
+                    display: inline-flex;    
+                }
+                .linea {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                .copyright {
+                    margin-top: 10px;
+                }
+            }
+        }
+        .container .linea {
+            padding: 0 30px;
+        }    
+    }
+
+/*Tablet*/
+@media screen and (min-width:499px) and (max-width:880px) {
+    /*header*/
+    .logo {
+        left: 45%;
+    }
+    /*body index.html*/
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-nosotros img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    .img-bombones img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    /*fin body index.html*/
+    /*bombones.html*/
+    .card-group {
+        padding: 150px 0px 0px 0px;
+        .bombones-body {
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .card-body {
+            margin-left: 15px;
+        }
+    }
+    /*footer*/
+    footer {
+        height: 400px;
+        .footer-navegation-tienda-logo-contacto {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: end;
+            .footer-navegation-logo {
+                margin-top: 20px;
+                align-content: center;
+                img {
+                width: 100px;   
+                }
+            }
+            .footer-navegation-tienda {
+                margin-top: 0px;
+                text-align: left;
+            }
+            .footer-navegation-contacto {
+                text-align: left;
+                .footer-list {
+                    li {
+                        line-height: 1.5;
+                    }
+                    .footer-connect {
+                        padding-top: 30px;
+                        line-height: 1.5;
+                        display: flex;
+                        .connect-fb {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    .footer-copyright {
+        padding: 10px 0;
+        .footer-copyright-list {
+            li {
+                margin-top: 30px;
+                list-style: none;
+                align-items: center;
+                display: inline-flex;    
+            }
+            .linea {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .copyright {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+/*Mobile*/
+@media screen and (max-width:499px) {
+    /*header*/
+    .logo {
+        left: 41%; 
+    }
+    /*footer*/
+    footer { 
+        .footer-navegation-logo {
+            display: none;
+        }
+        .container {
+            ul {
+                display: flex;
+                flex-direction: column;
+                .linea {
+                    display: none;
+                }
+            }
+        }
+        .footer-navegation-tienda {
+            margin-top: 0px;
+            ul {
+                text-align: center !important;
+            }
+        }
+    }
+}

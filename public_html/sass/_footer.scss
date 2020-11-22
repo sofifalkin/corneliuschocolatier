@@ -1,0 +1,97 @@
+@import 'mixins';
+@import 'colors';
+
+/*Footer*/
+footer {
+    background-color: $background-color-body;
+    color: $text-color;
+    height: 600px;
+    position: relative; 
+    .footer-navegation-tienda-logo-contacto {
+        height: 100%;
+        padding: 40px 30px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-navegation-tienda {
+            margin-left: 0px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+            ul {
+                text-align: center;
+                @include btn-index;
+                    a {
+                    text-decoration: none;
+                    color: $text-color;
+                    &::after {
+                        @include after
+                    }
+                    &:hover::after {
+                        @include btn-index-hover;
+                    }
+                }
+            
+            }
+        }
+        .footer-navegation-contacto {
+            margin-right: 0px;
+            text-align: center;
+            .logo-connect {
+                display: inline-flex;
+                img {
+                    height: 40px;
+                    width: auto;  
+                    @include iconos;
+                    
+                    &:hover {
+                        @include iconos-hover;
+                    }
+                }
+            }
+            .fb {
+                margin-right: 25px;
+            }
+        }
+    }
+}    
+.footer-copyright {
+    margin-bottom: 20px;
+    background-color: $background-color-body;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    .footer-copyright-list {
+        li {
+            margin-top: 20px;
+            list-style: none;
+            align-items: center;
+            flex-direction: column;    
+        }
+    } 
+    .footer-ayuda {
+        margin-top: 20px;
+        ul {
+            display: inline-flex;
+            @include btn-index;
+            .footer-ayuda-list-item {
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+            a {
+                text-decoration: none;
+                color: $text-color;
+                &::after {
+                        @include after
+                }
+                &:hover::after {
+                        @include btn-index-hover;
+                }
+            }
+        }
+    }   
+}
+
