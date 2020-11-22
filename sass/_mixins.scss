@@ -117,7 +117,8 @@
 }
 
 @mixin btn-index-hover {
-    width: 64px;
+    content: "";
+    width: 100%;
     transition: width .3s; 
 }
 

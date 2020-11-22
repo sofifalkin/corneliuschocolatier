@@ -286,8 +286,27 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda {
   margin-bottom: 40px;
   text-align: center;
 }
-footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda li a {
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul {
+  padding-left: 0px;
+  text-align: left;
+  cursor: pointer;
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a {
+  text-decoration: none;
   color: white;
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #840032;
+  transition: width 0.3s;
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a:hover::after {
+  content: "";
+  width: 100%;
+  transition: width 0.3s;
 }
 footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto {
   margin-right: 0px;
@@ -341,13 +360,30 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
 }
 .footer-copyright .footer-ayuda ul {
   display: inline-flex;
+  padding-left: 0px;
+  text-align: left;
+  cursor: pointer;
 }
 .footer-copyright .footer-ayuda ul .footer-ayuda-list-item {
   margin-right: 25px;
   margin-left: 25px;
 }
 .footer-copyright .footer-ayuda ul a {
+  text-decoration: none;
   color: white;
+}
+.footer-copyright .footer-ayuda ul a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #840032;
+  transition: width 0.3s;
+}
+.footer-copyright .footer-ayuda ul a:hover::after {
+  content: "";
+  width: 100%;
+  transition: width 0.3s;
 }
 
 /*btns-index*/
@@ -412,7 +448,8 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   transition: width 0.3s;
 }
 .body .body-izq .index .texto-index .btn a:hover::after {
-  width: 64px;
+  content: "";
+  width: 100%;
   transition: width 0.3s;
 }
 .body .body-der p {
@@ -468,7 +505,8 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   transition: width 0.3s;
 }
 .body .body-der .index .texto-index .btn a:hover::after {
-  width: 64px;
+  content: "";
+  width: 100%;
   transition: width 0.3s;
 }
 

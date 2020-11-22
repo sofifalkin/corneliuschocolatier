@@ -18,10 +18,19 @@ footer {
             margin-top: 10px;
             margin-bottom: 40px;
             text-align: center;
-            li {
-                a {
+            ul {
+                @include btn-index;
+                    a {
+                    text-decoration: none;
                     color: $text-color;
+                    &::after {
+                        @include after
+                    }
+                    &:hover::after {
+                        @include btn-index-hover;
+                    }
                 }
+            
             }
         }
         .footer-navegation-contacto {
@@ -66,12 +75,20 @@ footer {
         margin-top: 20px;
         ul {
             display: inline-flex;
+            @include btn-index;
             .footer-ayuda-list-item {
                 margin-right: 25px;
                 margin-left: 25px;
             }
             a {
+                text-decoration: none;
                 color: $text-color;
+                &::after {
+                        @include after
+                }
+                &:hover::after {
+                        @include btn-index-hover;
+                }
             }
         }
     }   
