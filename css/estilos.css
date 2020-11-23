@@ -323,6 +323,10 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto {
   margin-right: 0px;
   text-align: center;
 }
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto li {
+  text-decoration: none;
+  color: white;
+}
 footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .logo-connect {
   display: inline-flex;
 }

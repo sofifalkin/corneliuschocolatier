@@ -41,6 +41,10 @@ footer {
         .footer-navegation-contacto {
             margin-right: 0px;
             text-align: center;
+            li {
+            text-decoration: none;
+            color: $text-color;
+            }
             .logo-connect {
                 display: inline-flex;
                 img {
