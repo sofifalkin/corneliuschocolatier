@@ -24,6 +24,11 @@ footer {
                     a {
                     text-decoration: none;
                     color: $text-color;
+                    position: relative;
+                    &:hover {
+                        color: $hovercolor;
+                        transition: width .3s; 
+                    }
                     &::after {
                         @include after
                     }
@@ -31,7 +36,6 @@ footer {
                         @include btn-index-hover;
                     }
                 }
-            
             }
         }
         .footer-navegation-contacto {
@@ -69,7 +73,22 @@ footer {
             margin-top: 20px;
             list-style: none;
             align-items: center;
-            flex-direction: column;    
+            flex-direction: column;
+            .autor {
+                text-decoration: none;
+                color: $text-color;
+                position: relative;
+                &:hover {
+                    color: $hovercolor;
+                    transition: width .3s; 
+                }
+                &::after {
+                        @include after
+                }
+                &:hover::after {
+                        @include btn-index-hover;
+                }
+            }    
         }
     } 
     .footer-ayuda {
@@ -84,6 +103,10 @@ footer {
             a {
                 text-decoration: none;
                 color: $text-color;
+                &:hover {
+                    color: $hovercolor;
+                    transition: width .3s; 
+                }
                 &::after {
                         @include after
                 }
@@ -95,3 +118,11 @@ footer {
     }   
 }
 
+.footer-copyright-list {
+.sitio {
+    display: inline-block !important;
+}
+}
+li .autor {
+    display: inline-block;
+}

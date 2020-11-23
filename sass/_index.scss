@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'colors';
 /*Index.html*/
 .body {
     background-color: $background-color-body;
@@ -24,6 +25,10 @@
                     a {
                         text-decoration: none;
                         color: $text-color;
+                        &:hover {
+                            color: $hovercolor;
+                            transition: width .3s; 
+                        }
                         &::after {
                             @include after
                         }
@@ -61,8 +66,12 @@
                     a {
                         text-decoration: none;
                         color: $text-color;
+                        &:hover {
+                            color: $hovercolor;
+                            transition: width .3s; 
+                        }
                         &::after {
-                            @include after;
+                            @include after; 
                         }
                         &:hover::after {
                             @include btn-index-hover;
@@ -74,4 +83,3 @@
     } 
 }
 /*FinIndex.html*/
-

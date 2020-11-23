@@ -129,6 +129,9 @@ header {
   text-transform: uppercase;
   position: relative;
 }
+.container-total .container-paginas .navbar-paginas .nav-list .nav-item .nav-link:hover {
+  color: #840032;
+}
 .container-total .container-paginas .navbar-paginas .nav-list .nav-item .nav-link::before {
   content: "";
   width: 100%;
@@ -295,6 +298,11 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul {
 footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a {
   text-decoration: none;
   color: white;
+  position: relative;
+}
+footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a:hover {
+  color: #840032;
+  transition: width 0.3s;
 }
 footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a::after {
   content: "";
@@ -302,11 +310,13 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a::a
   width: 0;
   height: 2px;
   background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 footer .footer-navegation-tienda-logo-contacto .footer-navegation-tienda ul a:hover::after {
-  content: "";
-  width: 100%;
+  width: 30px;
+  background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto {
@@ -356,6 +366,30 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   align-items: center;
   flex-direction: column;
 }
+.footer-copyright .footer-copyright-list li .autor {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.footer-copyright .footer-copyright-list li .autor:hover {
+  color: #840032;
+  transition: width 0.3s;
+}
+.footer-copyright .footer-copyright-list li .autor::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #840032;
+  color: #840032;
+  transition: width 0.3s;
+}
+.footer-copyright .footer-copyright-list li .autor:hover::after {
+  width: 30px;
+  background: #840032;
+  color: #840032;
+  transition: width 0.3s;
+}
 .footer-copyright .footer-ayuda {
   margin-top: 20px;
 }
@@ -373,18 +407,32 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   text-decoration: none;
   color: white;
 }
+.footer-copyright .footer-ayuda ul a:hover {
+  color: #840032;
+  transition: width 0.3s;
+}
 .footer-copyright .footer-ayuda ul a::after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
   background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 .footer-copyright .footer-ayuda ul a:hover::after {
-  content: "";
-  width: 100%;
+  width: 30px;
+  background: #840032;
+  color: #840032;
   transition: width 0.3s;
+}
+
+.footer-copyright-list .sitio {
+  display: inline-block !important;
+}
+
+li .autor {
+  display: inline-block;
 }
 
 /*btns-index*/
@@ -440,17 +488,23 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   text-decoration: none;
   color: white;
 }
+.body .body-izq .index .texto-index .btn a:hover {
+  color: #840032;
+  transition: width 0.3s;
+}
 .body .body-izq .index .texto-index .btn a::after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
   background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 .body .body-izq .index .texto-index .btn a:hover::after {
-  content: "";
-  width: 100%;
+  width: 30px;
+  background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 .body .body-der p {
@@ -497,17 +551,23 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   text-decoration: none;
   color: white;
 }
+.body .body-der .index .texto-index .btn a:hover {
+  color: #840032;
+  transition: width 0.3s;
+}
 .body .body-der .index .texto-index .btn a::after {
   content: "";
   display: block;
   width: 0;
   height: 2px;
   background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 .body .body-der .index .texto-index .btn a:hover::after {
-  content: "";
-  width: 100%;
+  width: 30px;
+  background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 
@@ -664,11 +724,13 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   width: 0;
   height: 2px;
   background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 .body-nosotros .body-izq .index .texto-index .btn a:hover::after {
-  content: "";
-  width: 100%;
+  width: 30px;
+  background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 .body-nosotros .body-der p {
@@ -721,11 +783,13 @@ footer .footer-navegation-tienda-logo-contacto .footer-navegation-contacto .fb {
   width: 0;
   height: 2px;
   background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 .body-nosotros .body-der .index .texto-index .btn a:hover::after {
-  content: "";
-  width: 100%;
+  width: 30px;
+  background: #840032;
+  color: #840032;
   transition: width 0.3s;
 }
 
@@ -1008,11 +1072,13 @@ body {
     width: 0;
     height: 2px;
     background: #840032;
+    color: #840032;
     transition: width 0.3s;
   }
   .body-mobile .body-izq .index .texto-index .btn a:hover::after {
-    content: "";
-    width: 100%;
+    width: 30px;
+    background: #840032;
+    color: #840032;
     transition: width 0.3s;
   }
 
@@ -1069,11 +1135,13 @@ body {
     width: 0;
     height: 2px;
     background: #840032;
+    color: #840032;
     transition: width 0.3s;
   }
   .nosotros-mobile .body-izq .index .texto-index .btn a:hover::after {
-    content: "";
-    width: 100%;
+    width: 30px;
+    background: #840032;
+    color: #840032;
     transition: width 0.3s;
   }
 

@@ -39,6 +39,7 @@
     width: 0;
     height: 2px;
     background: $hovercolor;
+    color: $hovercolor;
     transition: width .3s;
 }
 
@@ -133,8 +134,9 @@
 }
 
 @mixin btn-index-hover {
-    content: "";
-    width: 100%;
+    width: 30px;
+    background: $hovercolor;
+    color: $hovercolor;
     transition: width .3s; 
 }
 /*fin-body-index*/
