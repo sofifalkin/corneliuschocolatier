@@ -31,6 +31,10 @@ body {
     .body-mobile {
         display: none;
     }
+    /*nosotros.html*/
+    .nosotros-mobile {
+        display: none;
+    }
      /*bombones.html*/
      .card-group {
         padding: 50px 0px 0px 0px;
@@ -44,7 +48,6 @@ body {
             margin-left: 15px;
         }
     }
-    /*bombones.html*/
     .bombones-body {
         img {
             @include img-index;
@@ -141,7 +144,10 @@ body {
     .body-mobile {
         display: none;
     }
-    /*fin body index.html*/
+    /*nosotros.html*/
+    .nosotros-mobile {
+        display: none;
+    }
     /*bombones.html*/
     .card-group {
         padding: 50px 0px 0px 0px;
@@ -217,10 +223,51 @@ body {
     .logo {
         left: 41%; 
     }
+    /*index.html*/
     .body {
         display: none;
     }
     .body-mobile {
+        .body-izq {
+            .index {
+                display: flex;
+                justify-content: space-between;
+                .img-izq {
+                    img {
+                        @include img-index-carac;
+                        @include img-index;
+                        
+                        &:hover {
+                            @include img-index-hover;
+                        }
+                    }
+                }
+                .texto-index {
+                    @include texto-index;
+                    .btn {
+                        @include btn-index;
+                        a {
+                            text-decoration: none;
+                            color: $text-color;
+                            &::after {
+                                @include after
+                            }
+                            &:hover::after {
+                                @include btn-index-hover;
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*fin index.html*/
+    /*bombones.html*/
+    .body-der {
+        display: none;
+    }
+    .nosotros-mobile {
         .body-izq {
             .index {
                 display: flex;
